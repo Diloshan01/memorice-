@@ -1,19 +1,473 @@
-<html>
-	<head>
-		<title> Testing HTML project 01</title>
-		<link rel="icon" href="E:\Hacker\pictures/learn.jpg">
-	</head>
-	<body>
-		<p align="center" style="color:green; font-size:40px;"> This is<span style="text-decoration:underline; color:red;"> font size </span> testing project </p>
-		<ol type="1">
-		<h1 title="H1 Fonts"><li>King of the world!!!</h1></li>
-		<h2 title="H2 Fonts"><li>King of the world!!!</h2></li>
-		<h3 title="H3 Fonts"><li>King of the world!!!</h3></li>
-		<h4 title="H4 Fonts"><li>King of the world!!!</h4></li>
-		<h5 title="H5 Fonts"><li>King of the world!!!</h5></li>
-		<h6 title="H6 Fonts"><li>King of the world!!!</h6></li>
-		<h7 title="H7 Fonts"><li>King of the world!!!</h7></li>
-		<h8 title="H8 Fonts"><li>King of the world!!!</h8></li>
-		</ol>
-	</body>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="myweb.css">
+
+ <style>     
+
+
+body {
+  border: 4px dashed red;
+  background-image: repeating-linear-gradient(black,green);
+}
+  script {
+    background-image: repeating-linear-gradient(red);
+  
+  }
+  
+.Dilo {
+  font-style: italic;
+  text-shadow:0 0 10px #00FF00;
+  font-weight: 900;
+  font-size: 70px;
+  background-image: repeating-linear-gradient(black,green);
+  font-family: Courier New;
+}
+.inpu {
+  background: repeating-linear-gradient(60deg,red,yellow,blue,greenyellow);
+  font-family: cursive;
+}
+header {
+  font-size: 40px;
+  background-image: repeating-linear-gradient(black 50,green);
+  text-shadow: 10px 10px 10px green,
+  0 0 10px greenyellow;
+  
+
+}
+button {
+  color: green;
+  padding: 8px 50px;
+  border-radius:69px;
+  background-color: black;
+  transition: all 0.2s ease;
+  border:2px solid chartreuse;
+  background: transparent;/* pata eka patata*/
+  color: greenyellow;
+  cursor: pointer;
+  overflow: hidden;
+  text-transform: uppercase;
+}
+button:active {
+  transform: scale(1.50);
+  background : repeating-linear-gradient(50deg,red,blue,red,yellow);
+  animation: button 5s linear infinite;
+}
+@keyframes button {
+  0%{
+    background-position :0%;
+  }
+  100% {
+    background-position: 10000000000%;
+  }
+}
+button:hover 
+{
+  width: 70%;
+  color :red;
+  background: black;
+}
+
+h4 {
+  box-shadow: 0 0 5px green,
+  0 0 25px green;
+  
+}
+button:active {
+  box-shadow: 0 5px 10px greenyellow,
+  0 0 10px green, 0 0 10px yellow,
+  0 0 10px blue, 0 10px 10px red,
+  10px 10px 10px yellow;
+
+  
+}
+
+
+#nem {
+  background-image: repeating-linear-gradient(green,white);
+  font-family: Courier;
+  color:red;
+
+}
+
+.slider {
+  position: relative;
+  position: absolute;
+  top: 0;
+  width: 200px;
+}
+.slider::before {
+  contain: '';
+  position : absolute;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  background : red;
+  
+}
+h2 {
+  animation: dis 5s ease-in 5s;
+
+}
+}
+
+@keyframes dis{
+  0%{
+    opacity: 1;
+  }
+  10%{
+    opacity: 0;
+  }
+  40%{
+    opacity: 1;
+  }
+  30%{
+    opacity: 1;
+  }
+  80%{
+    opacity: 0;
+  }
+}
+
+font {
+  font-family: serif;
+  background: repeating-linear-gradient(60deg,greenyellow,blue, red,yellow,green);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+
+  animation: name 100s linear infinite;
+}
+
+@keyframes name{
+  0%{
+    background-position: 0%;
+  }
+  100% {
+    background-position: 10000000%;
+  }
+}
+.Dilo {
+  font-family: cursive;
+  background: repeating-linear-gradient(60deg,red,blue,yellow,green,red,blue,yellow,green,red,blue,yellow,green);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  animation: Dilo 999s linear infinite;
+}
+
+@keyframes Dilo{
+  0%{
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100000000%;
+  }
+}
+
+
+
+h6 {
+  font-family: cursive;
+  color: #111;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  font-size: 2em;
+  background:;
+}
+
+h6 span {
+  display: table-cell;
+  margin: 0;
+  padding: 0;
+  animation: king 10s linear infinite;
+}
+@keyframes king {
+  0%,100% {
+    color: red;
+    filter: blur(2px);
+    text-shadow: 0 0 10pc #00b3ff;
+  }
+  5% ,95%{
+    color: #111;
+    filter: blur(0px);
+    text-shadow:0 0 10px ghostwhite;
+  }
+}
+
+h3{
+  color:red;
+  background: repeating-linear-gradient(50deg,black,red);
+  height: 100vh;
+  margin:10px;
+  justify-content: center;
+  align-items: center;
+  font-size: 6em;
+}
+
+
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2.5px solid red;
+  box-sizing: border-box;
+  background: repeating-linear-gradient(60deg,black,green,black);
+  color :black;
+  border-radius: 5px;
+  text-shadow: 0 0 30px black;
+}
+
+#but {
+  color: black;
+  background: repeating-linear-gradient(60deg,black,green,black);
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: 5px solid darkred;
+  cursor: pointer;
+  width: 100%;
+    }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  .cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+  }
+    }
+  
+    .imgcontainer {
+      text-align: center;
+      margin: 24px 0 12px 0;
+      position: relative;
+    }
+  
+    img.avatar {
+      width: 40%;
+      border-radius: 50%;
+    }
+  
+    .container {
+      padding: 16px;
+    }
+  
+    span.psw {
+      float: right;
+      padding-top: 16px;
+    }
+  
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 200%; 
+  overflow: auto;
+  background-color: rgb(0,0,0); 
+  background-color: rgba(255,255,255,-4);
+  padding-top: 80px;
+}
+
+.modal-content {
+  background-image: repeating-linear-gradient(60deg,black,green,black);
+  margin: 6% auto 15% auto;
+  border: 4px solid red;
+  width: 80%;
+}
+
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: darkgray;
+  font-size: 40px;
+  font-weight: bold;
+  
+}
+.close:hover,
+.closr:focus{
+  color:red;
+  text-shadow: 0 0 10px red;
+  cursor: pointer;
+}
+
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}  
+
+
+#cen {
+  background: repeating-linear-gradient(50deg,black,green)
+}
+
+
+ </style>
+ 
+ <script>
+
+
+document.getElementById("login").onclick = function(){
+  var x = document.getElementById("N").Value;
+  console.log("Hi Welcome to My Web. "+x);
+}
+
+function name_function (){
+  let name = document.getElementById("nem").innerText;
+  document.writeln("<h1>WELCOME MY WEB</h1>);
+}
+
+
+
+
+var modal = document.getElementById('id01');
+ window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+ }
+
+
+
+ </script>
+
+ </style>
+</style>
+  <title>S.P.Diloshan~King</title>
+
+</head>
+<body id="all"><>
+  <center><h6>
+    <span>K</span>
+    <span>i</span>
+    <span>n</span>
+    <span>g</span>
+    <span>  </span>
+    <span>O</span>
+    <span>f</span>
+    <span>  </span>
+    <span>T</span>
+    <span>h</span>
+    <span>e</span>
+    <span>  </span>
+    <span>W</span>
+    <span>o</span>
+    <span>r</span>
+    <span>l</span>
+    <span>d</span>
+    <span>!</span>
+    <span>!</span>
+    <span>!</span>
+
+    
+    
+  </h6></center>
+
+<div id="id01" class="modal">
+
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+    </div>
+    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+
+    <div class="container">
+      <label for="uname"><b><font>Username</font></b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b><font>Password</font></b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <button id="but" type="submit">Login</button>
+      <label>
+
+        <input type="checkbox" checked="checked" name="remember"><font> Remember me</font>
+      </label>
+    </div>
+
+    <div class="container" style="background-color:repeating-linear-gradient(60deg,black,green,black,green);">
+      <button id="cen" type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <font><span class="psw">Forgot <a href="#">password?</a></span></font>
+    </div>
+  </form>
+</div>
+
+
+
+
+
+
+
+
+
+
+<b><p id="enter"><font>Enter your Name :<input id="nem" type="name">ok<input type="radio" onclick="name_function()"></p></font></b>
+
+
+<center><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><font>Login</font></button></center>
+
+
+<!center><!button type="reset" id="login"><!a href="login.html"><!font color="red"><!b><!/b><!/font><!/a><!/button><!/center><!/b>
+
+  <marquee behavior="alternate" scrollamount="7"><h2><header>Welcome</header></h2></marquee>
+  
+
+  <script src="myweb.js" id="gre"></script>
+  <section>
+    <div class="slider">
+      <span></span>
+    </div>
+  </section>
+   <marquee behavior="alternate" scrollamount="90"><font color="red"><b>- - - - -</b></font>
+   </marquee>
+  <b><center><font>king of the world!!!</font></center></b>
+  <center><button type="button"><b>go to web ~~~></b></button></center>
+  <center><h5><button type="button" onclick="sendWhatsapp();"><b>Chat With Creator...</b></button></h5></center>
+  <script>
+    function sendWhatsapp() {
+  var phoneNum = "+94770020184";
+  var x = document.getElementById("N").innerHTML;
+  var msg = "Hi Diloshan"+ x;
+  var url = "https://wa.me/"+phoneNum +"?text="+msg;
+  window.open(url,"_blank").focus();
+}
+
+  </script>
+
+<b><p class="Dilo">S.P.Diloshan</p></h3></b>
+   <marquee behavior="alternate" scrollamount="100">
+     <font color="red"><b>- - - - -</b>
+   </marquee>
+   <audio controls>
+     <source src="../hi.aac">
+   </audio>
+</p></body>
+</html>
